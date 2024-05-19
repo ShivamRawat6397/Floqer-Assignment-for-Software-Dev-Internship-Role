@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# ML Engineer Salaries Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+This project aims to provide insights into ML Engineer salaries from the years 2020 to 2024. It consists of a basic table displaying key statistics and analytics, including a line graph visualizing the change in the number of total jobs over the years and a detail table showing aggregated job titles and their counts for a selected year.
 
-Currently, two official plugins are available:
+## Installation
+1. **Clone the repository to your local machine:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Navigate to the project directory:**
 
-## Expanding the ESLint configuration
+3. **Install dependencies:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+1. **Run the project:**
 
-- Configure the top-level `parserOptions` property like this:
+2. **Access the dashboard in your browser at `http://localhost:3000`.**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Packages Used
+- [PapaParse](https://www.npmjs.com/package/papaparse): A powerful CSV parser for parsing ML Engineer salary data.
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Ant Design](https://ant.design/): A design system and UI library for React with components such as Table.
+- [@ant-design/charts](https://charts.ant.design/): A React chart library for creating interactive data visualizations.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Components
+1. **MainTable:** Displays a table with columns for Year, Number of total jobs, and Average salary in USD. Users can sort the table by any column.
+2. **LineGraph:** Renders a line graph showing the change in the number of total jobs from 2020 to 2024.
+3. **DetailTable:** Appears when a row in the main table is clicked, displaying aggregated job titles and their counts for the selected year.
+
+## Data
+The dataset used provides information on ML Engineer salaries from 2020 to 2024.
+
+## Future Improvements
+- Implement additional features such as filtering and searching within the tables.
+- Enhance the UI/UX for a better user experience.
+- Add more visualizations to provide deeper insights into the data.
+
+## Contributors
+- [Your Name](https://github.com/your_username)
+
+Feel free to contribute to this project by opening issues or submitting pull requests!
+
+---
