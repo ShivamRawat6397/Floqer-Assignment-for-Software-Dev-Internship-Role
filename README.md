@@ -35,7 +35,7 @@ The dataset used provides information on ML Engineer salaries from 2020 to 2024.
 - Add more visualizations to provide deeper insights into the data.
 
 ## Contributors
-- [Your Name](https://github.com/your_username)
+- Shivam Rawat
 
 Feel free to contribute to this project by opening issues or submitting pull requests!
 
